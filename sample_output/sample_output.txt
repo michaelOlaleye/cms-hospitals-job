@@ -1,0 +1,275 @@
+Sample output - CMS Hospitals job
+
+Metastore checked on 2026-10-26: 237 datasets, 75 tagged "Hospitals".
+
+1) snake_case check  (python cms_hospitals_job.py --self-test)
+
+PASS  'Patients’ rating of the facility linear mean score'       -> patients_rating_of_the_facility_linear_mean_score
+PASS  'Facility ID'                                              -> facility_id
+PASS  'City/Town'                                                -> city_town
+PASS  'ZIP Code'                                                 -> zip_code
+PASS  'Hospital overall rating footnote'                         -> hospital_overall_rating_footnote
+PASS  'Number of Discharges (%)'                                 -> number_of_discharges
+PASS  '  Score - Lower/Upper  '                                  -> score_lower_upper
+PASS  "Hospital's Name"                                          -> hospitals_name
+PASS  'MSPB-1 Score'                                             -> mspb_1_score
+PASS  'measureID'                                                -> measure_id
+PASS  'Café Né'                                                  -> cafe_ne
+PASS  '30-day mortality'                                         -> col_30_day_mortality
+PASS  ''                                                         -> unnamed
+PASS  duplicate headers ['Score','score','SCORE '] -> ['score', 'score_2', 'score_3']
+
+14 passed, 0 failed
+
+2) First run, nothing saved yet, so all 75 get queued  (--dry-run)
+
+14:50:13  Previous successful run: none (first run)
+14:50:13  Starting run #1
+14:50:13  Metastore: 237 items total, 75 with theme 'Hospitals'
+14:50:13    queue  48nr-hqxx  Outpatient and Ambulatory Surgery Consumer Assessment of Healthcare Providers and Systems (OAS CAHPS) survey for ambulatory surgical centers - Facility  (new dataset)
+14:50:13    queue  4jcv-atw7  Ambulatory Surgical Center Quality Measures - Facility  (new dataset)
+14:50:13    queue  wue8-3vwe  Ambulatory Surgical Center Quality Measures - National  (new dataset)
+14:50:13    queue  tf3h-mrrs  Outpatient and Ambulatory Surgery Consumer Assessment of Healthcare Providers and Systems (OAS CAHPS) survey for ambulatory surgical centers - National  (new dataset)
+14:50:13    queue  axe7-s95e  Ambulatory Surgical Center Quality Measures - State  (new dataset)
+14:50:13    queue  x663-bwbj  Outpatient and Ambulatory Surgery Consumer Assessment of Healthcare Providers and Systems (OAS CAHPS) survey for ambulatory surgical centers - State  (new dataset)
+14:50:13    queue  tqkv-mgxq  Comprehensive Care For Joint Replacement Model - Provider Data  (new dataset)
+14:50:13    queue  muwa-iene  CMS Medicare PSI-90 and component measures - six-digit estimate dataset  (new dataset)
+14:50:13    queue  ynj2-r877  Complications and Deaths - Hospital  (new dataset)
+14:50:13    queue  qqw3-t4ie  Complications and Deaths - National  (new dataset)
+14:50:13    queue  bs2r-24vh  Complications and Deaths - State  (new dataset)
+14:50:13    queue  y9us-9xdf  Footnote Crosswalk  (new dataset)
+14:50:13    queue  xrgf-x36b  Table 2: FY2024 Distribution of Net Change in Base Operating DRG Payment Amount  (new dataset)
+14:50:13    queue  5gv4-jwyv  Table 1: FY2024 Net Change in Base Operating DRG Payment Amount  (new dataset)
+14:50:13    queue  u625-zae7  Table 3: FY2024 Percent Change in Medicare Payments  (new dataset)
+14:50:13    queue  vtqa-m4zn  Table 4: FY2024 Value-Based Incentive Payment Amount  (new dataset)
+14:50:13    queue  dgck-syfz  Patient survey (HCAHPS) - Hospital  (new dataset)
+14:50:13    queue  99ue-w85f  Patient survey (HCAHPS) - National  (new dataset)
+14:50:13    queue  84jm-wiui  Patient survey (HCAHPS) - State  (new dataset)
+14:50:13    queue  77hc-ibv8  Healthcare Associated Infections - Hospital  (new dataset)
+14:50:13    queue  yd3s-jyhd  Healthcare Associated Infections - National  (new dataset)
+14:50:13    queue  k2ze-bqvw  Healthcare Associated Infections - State  (new dataset)
+14:50:13    queue  yizn-abxn  Outpatient and Ambulatory Surgery Consumer Assessment of Healthcare Providers and Systems (OAS CAHPS) survey for hospital outpatient departments - Facility  (new dataset)
+14:50:13    queue  s5pj-hua3  Outpatient and Ambulatory Surgery Consumer Assessment of Healthcare Providers and Systems (OAS CAHPS) survey for hospital outpatient departments - National  (new dataset)
+14:50:13    queue  6pfg-whmx  Outpatient and Ambulatory Surgery Consumer Assessment of Healthcare Providers and Systems (OAS CAHPS) survey for hospital outpatient departments - State  (new dataset)
+14:50:13    queue  xubh-q36u  Hospital General Information  (new dataset)
+14:50:13    queue  z8ax-x9j1  Complications and Unplanned Hospital Visits - PPS-Exempt Cancer Hospital - Hospital  (new dataset)
+14:50:13    queue  jfnd-nl7s  Complications and Unplanned Hospital Visits - PPS-Exempt Cancer Hospital - National  (new dataset)
+14:50:13    queue  yq43-i98g  Hospital-Acquired Condition (HAC) Reduction Program  (new dataset)
+14:50:13    queue  5hk7-b79m  Medicare Spending Per Beneficiary - Hospital Additional Decimal Places  (new dataset)
+14:50:13    queue  k653-4ka8  Safety and Healthcare-Associated Infection Measures - PPS-Exempt Cancer Hospital  (new dataset)
+14:50:13    queue  iy27-wz37  Patient Survey (PCH - HCAHPS) PPS-Exempt Cancer Hospital - Hospital  (new dataset)
+14:50:13    queue  9g7e-btyt  Patient Survey (PCH - HCAHPS) PPS-Exempt Cancer Hospital - National  (new dataset)
+14:50:13    queue  qatj-nmws  Patient Survey (PCH - HCAHPS) PPS-Exempt Cancer Hospital - State  (new dataset)
+14:50:13    queue  9n3s-kdb3  Hospital Readmissions Reduction Program  (new dataset)
+14:50:13    queue  pudb-wetr  Hospital Value-Based Purchasing (HVBP) - Clinical Outcomes Domain Scores  (new dataset)
+14:50:13    queue  su9h-3pvj  Hospital Value-Based Purchasing (HVBP) - Efficiency Scores  (new dataset)
+14:50:13    queue  avtz-f2ge  Hospital Value-Based Purchasing (HVBP) - Person and Community Engagement Domain Scores (HCAHPS)  (new dataset)
+14:50:13    queue  dgmq-aat3  Hospital Value-Based Purchasing (HVBP) - Safety  (new dataset)
+14:50:13    queue  ypbt-wvdk  Hospital Value-Based Purchasing (HVBP) - Total Performance Score  (new dataset)
+14:50:13    queue  q9vs-r7wp  Inpatient Psychiatric Facility Quality Measure Data - by Facility  (new dataset)
+14:50:13    queue  s5xg-sys6  Inpatient Psychiatric Facility Quality Measure Data - National  (new dataset)
+14:50:13    queue  dc76-gh7x  Inpatient Psychiatric Facility Quality Measure Data - by State  (new dataset)
+14:50:13    queue  4j6d-yzce  Measure Dates  (new dataset)
+14:50:13    queue  nrth-mfg3  Medicare Hospital Spending by Claim  (new dataset)
+14:50:13    queue  rrqw-56er  Medicare Spending Per Beneficiary - Hospital  (new dataset)
+14:50:13    queue  3n5g-6b7f  Medicare Spending Per Beneficiary - National  (new dataset)
+14:50:13    queue  rs6n-9qwg  Medicare Spending Per Beneficiary - State  (new dataset)
+14:50:13    queue  wkfw-kthe  Outpatient Imaging Efficiency - Hospital  (new dataset)
+14:50:13    queue  di9i-zzrc  Outpatient Imaging Efficiency - National  (new dataset)
+14:50:13    queue  if5v-4x48  Outpatient Imaging Efficiency - State  (new dataset)
+14:50:13    queue  yv7e-xc69  Timely and Effective Care - Hospital  (new dataset)
+14:50:13    queue  isrn-hqyy  Timely and Effective Care - National  (new dataset)
+14:50:13    queue  apyc-v239  Timely and Effective Care - State  (new dataset)
+14:50:13    queue  632h-zaca  Unplanned Hospital Visits - Hospital  (new dataset)
+14:50:13    queue  cvcs-xecj  Unplanned Hospital Visits - National  (new dataset)
+14:50:13    queue  4gkm-5ypv  Unplanned Hospital Visits - State  (new dataset)
+14:50:13    queue  6qxe-iqz8  Veterans Health Administration Behavioral Health Data  (new dataset)
+14:50:13    queue  ptds-r8im  Veterans Health Administration Timely and Effective Care Data  (new dataset)
+14:50:13    queue  uyx4-5s7f  Veterans Health Administration Provider Level Data  (new dataset)
+14:50:13    queue  bzsr-4my4  Data Updates  (new dataset)
+14:50:13    queue  nrdb-3fcy  Maternal Health - Hospital  (new dataset)
+14:50:13    queue  mxtu-43qs  Patient-Reported Outcomes - Hospital  (new dataset)
+14:50:13    queue  qoeg-w7ck  Palliative Care - PPS-Exempt Cancer Hospital - Hospital  (new dataset)
+14:50:13    queue  qigt-w5cx  Palliative Care - PPS-Exempt Cancer Hospital - National  (new dataset)
+14:50:13    queue  f4ga-b9gx  Promoting Interoperability - Hospital  (new dataset)
+14:50:13    queue  hbf-map    Birthing Friendly Hospitals with Geocoded Addresses  (new dataset)
+14:50:13    queue  97xg-v3wv  Rural Emergency Hospital Timely and Effective Care - Hospital  (new dataset)
+14:50:13    queue  d2k3-k3ac  Rural Emergency Hospital Timely and Effective Care - National  (new dataset)
+14:50:13    queue  7peb-i4pi  Rural Emergency Hospital Outpatient Imaging Efficiency - Hospital  (new dataset)
+14:50:13    queue  zt3q-3e1z  Rural Emergency Hospital Outpatient Imaging Efficiency - National  (new dataset)
+14:50:13    queue  zez1-ka2w  Rural Emergency Hospital Unplanned Hospital Visits - Hospital  (new dataset)
+14:50:13    queue  uk3n-au7a  Rural Emergency Hospital Unplanned Hospital Visits - National  (new dataset)
+14:50:13    queue  1su6-zfft  Patient Engagement PPS-Exempt Cancer Hospital - Hospital  (new dataset)
+14:50:13    queue  4dyz-5kt1  Patient Engagement PPS-Exempt Cancer Hospital - National  (new dataset)
+14:50:13  75 to download, 0 unchanged
+
+3) Hospitals datasets and the file each one is saved as
+
+id          modified    file (in data/hospitals/)
+4jcv-atw7   2025-12-16  ambulatory_surgical_center_quality_measures_facility__4jcv-atw7.csv
+wue8-3vwe   2025-12-16  ambulatory_surgical_center_quality_measures_national__wue8-3vwe.csv
+axe7-s95e   2025-12-16  ambulatory_surgical_center_quality_measures_state__axe7-s95e.csv
+hbf-map     2026-07-28  birthing_friendly_hospitals_with_geocoded_addresses__hbf-map.csv
+muwa-iene   2026-07-22  cms_medicare_psi_90_and_component_measures_six_digit_estimate_dataset__muwa-iene.csv
+ynj2-r877   2026-09-10  complications_and_deaths_hospital__ynj2-r877.csv
+qqw3-t4ie   2026-09-10  complications_and_deaths_national__qqw3-t4ie.csv
+bs2r-24vh   2026-09-10  complications_and_deaths_state__bs2r-24vh.csv
+z8ax-x9j1   2026-09-10  complications_and_unplanned_hospital_visits_pps_exempt_cancer_hospital_hospital__z8ax-x9j1.csv
+jfnd-nl7s   2026-09-10  complications_and_unplanned_hospital_visits_pps_exempt_cancer_hospital_national__jfnd-nl7s.csv
+tqkv-mgxq   2026-01-26  comprehensive_care_for_joint_replacement_model_provider_data__tqkv-mgxq.csv
+bzsr-4my4   2026-07-15  data_updates__bzsr-4my4.csv
+y9us-9xdf   2025-09-18  footnote_crosswalk__y9us-9xdf.csv
+77hc-ibv8   2026-07-22  healthcare_associated_infections_hospital__77hc-ibv8.csv
+yd3s-jyhd   2026-07-22  healthcare_associated_infections_national__yd3s-jyhd.csv
+k2ze-bqvw   2026-07-22  healthcare_associated_infections_state__k2ze-bqvw.csv
+xubh-q36u   2026-07-22  hospital_general_information__xubh-q36u.csv
+9n3s-kdb3   2026-01-26  hospital_readmissions_reduction_program__9n3s-kdb3.csv
+pudb-wetr   2026-01-26  hospital_value_based_purchasing_hvbp_clinical_outcomes_domain_scores__pudb-wetr.csv
+su9h-3pvj   2026-01-26  hospital_value_based_purchasing_hvbp_efficiency_scores__su9h-3pvj.csv
+avtz-f2ge   2026-01-26  hospital_value_based_purchasing_hvbp_person_and_community_engagement_domain_scores_hcahps__avtz-f2ge.csv
+dgmq-aat3   2026-04-28  hospital_value_based_purchasing_hvbp_safety__dgmq-aat3.csv
+ypbt-wvdk   2026-01-26  hospital_value_based_purchasing_hvbp_total_performance_score__ypbt-wvdk.csv
+yq43-i98g   2026-01-26  hospital_acquired_condition_hac_reduction_program__yq43-i98g.csv
+q9vs-r7wp   2026-07-22  inpatient_psychiatric_facility_quality_measure_data_by_facility__q9vs-r7wp.csv
+dc76-gh7x   2026-07-22  inpatient_psychiatric_facility_quality_measure_data_by_state__dc76-gh7x.csv
+s5xg-sys6   2026-07-22  inpatient_psychiatric_facility_quality_measure_data_national__s5xg-sys6.csv
+nrdb-3fcy   2026-07-22  maternal_health_hospital__nrdb-3fcy.csv
+4j6d-yzce   2026-07-28  measure_dates__4j6d-yzce.csv
+nrth-mfg3   2026-01-26  medicare_hospital_spending_by_claim__nrth-mfg3.csv
+rrqw-56er   2026-07-22  medicare_spending_per_beneficiary_hospital__rrqw-56er.csv
+5hk7-b79m   2026-01-26  medicare_spending_per_beneficiary_hospital_additional_decimal_places__5hk7-b79m.csv
+3n5g-6b7f   2026-07-22  medicare_spending_per_beneficiary_national__3n5g-6b7f.csv
+rs6n-9qwg   2026-07-22  medicare_spending_per_beneficiary_state__rs6n-9qwg.csv
+48nr-hqxx   2026-07-22  outpatient_and_ambulatory_surgery_consumer_assessment_of_healthcare_providers_and_systems_oas_cahps__48nr-hqxx.csv
+tf3h-mrrs   2026-07-22  outpatient_and_ambulatory_surgery_consumer_assessment_of_healthcare_providers_and_systems_oas_cahps__tf3h-mrrs.csv
+x663-bwbj   2026-07-22  outpatient_and_ambulatory_surgery_consumer_assessment_of_healthcare_providers_and_systems_oas_cahps__x663-bwbj.csv
+yizn-abxn   2026-07-22  outpatient_and_ambulatory_surgery_consumer_assessment_of_healthcare_providers_and_systems_oas_cahps__yizn-abxn.csv
+s5pj-hua3   2026-07-22  outpatient_and_ambulatory_surgery_consumer_assessment_of_healthcare_providers_and_systems_oas_cahps__s5pj-hua3.csv
+6pfg-whmx   2026-07-22  outpatient_and_ambulatory_surgery_consumer_assessment_of_healthcare_providers_and_systems_oas_cahps__6pfg-whmx.csv
+wkfw-kthe   2026-07-22  outpatient_imaging_efficiency_hospital__wkfw-kthe.csv
+di9i-zzrc   2026-07-22  outpatient_imaging_efficiency_national__di9i-zzrc.csv
+if5v-4x48   2026-07-22  outpatient_imaging_efficiency_state__if5v-4x48.csv
+qoeg-w7ck   2026-07-22  palliative_care_pps_exempt_cancer_hospital_hospital__qoeg-w7ck.csv
+qigt-w5cx   2026-07-22  palliative_care_pps_exempt_cancer_hospital_national__qigt-w5cx.csv
+1su6-zfft   2026-07-22  patient_engagement_pps_exempt_cancer_hospital_hospital__1su6-zfft.csv
+4dyz-5kt1   2026-07-22  patient_engagement_pps_exempt_cancer_hospital_national__4dyz-5kt1.csv
+dgck-syfz   2026-07-22  patient_survey_hcahps_hospital__dgck-syfz.csv
+99ue-w85f   2026-07-22  patient_survey_hcahps_national__99ue-w85f.csv
+84jm-wiui   2026-07-22  patient_survey_hcahps_state__84jm-wiui.csv
+iy27-wz37   2026-07-22  patient_survey_pch_hcahps_pps_exempt_cancer_hospital_hospital__iy27-wz37.csv
+9g7e-btyt   2026-07-22  patient_survey_pch_hcahps_pps_exempt_cancer_hospital_national__9g7e-btyt.csv
+qatj-nmws   2026-07-22  patient_survey_pch_hcahps_pps_exempt_cancer_hospital_state__qatj-nmws.csv
+mxtu-43qs   2026-08-05  patient_reported_outcomes_hospital__mxtu-43qs.csv
+f4ga-b9gx   2026-07-22  promoting_interoperability_hospital__f4ga-b9gx.csv
+7peb-i4pi   2026-07-22  rural_emergency_hospital_outpatient_imaging_efficiency_hospital__7peb-i4pi.csv
+zt3q-3e1z   2026-07-22  rural_emergency_hospital_outpatient_imaging_efficiency_national__zt3q-3e1z.csv
+97xg-v3wv   2026-07-22  rural_emergency_hospital_timely_and_effective_care_hospital__97xg-v3wv.csv
+d2k3-k3ac   2026-07-22  rural_emergency_hospital_timely_and_effective_care_national__d2k3-k3ac.csv
+zez1-ka2w   2026-07-22  rural_emergency_hospital_unplanned_hospital_visits_hospital__zez1-ka2w.csv
+uk3n-au7a   2026-07-22  rural_emergency_hospital_unplanned_hospital_visits_national__uk3n-au7a.csv
+k653-4ka8   2026-07-22  safety_and_healthcare_associated_infection_measures_pps_exempt_cancer_hospital__k653-4ka8.csv
+5gv4-jwyv   2025-12-09  table_1_fy2024_net_change_in_base_operating_drg_payment_amount__5gv4-jwyv.csv
+xrgf-x36b   2025-12-09  table_2_fy2024_distribution_of_net_change_in_base_operating_drg_payment_amount__xrgf-x36b.csv
+u625-zae7   2025-12-09  table_3_fy2024_percent_change_in_medicare_payments__u625-zae7.csv
+vtqa-m4zn   2025-12-09  table_4_fy2024_value_based_incentive_payment_amount__vtqa-m4zn.csv
+yv7e-xc69   2026-07-22  timely_and_effective_care_hospital__yv7e-xc69.csv
+isrn-hqyy   2026-07-22  timely_and_effective_care_national__isrn-hqyy.csv
+apyc-v239   2026-07-22  timely_and_effective_care_state__apyc-v239.csv
+632h-zaca   2026-09-10  unplanned_hospital_visits_hospital__632h-zaca.csv
+cvcs-xecj   2026-09-10  unplanned_hospital_visits_national__cvcs-xecj.csv
+4gkm-5ypv   2026-09-10  unplanned_hospital_visits_state__4gkm-5ypv.csv
+6qxe-iqz8   2026-07-22  veterans_health_administration_behavioral_health_data__6qxe-iqz8.csv
+uyx4-5s7f   2026-07-22  veterans_health_administration_provider_level_data__uyx4-5s7f.csv
+ptds-r8im   2026-07-22  veterans_health_administration_timely_and_effective_care_data__ptds-r8im.csv
+
+How many datasets share each 'modified' date:
+  2025-09-18  1
+  2025-12-09  4
+  2025-12-16  3
+  2026-01-26  9
+  2026-04-28  1
+  2026-07-15  1
+  2026-07-22  45
+  2026-07-28  2
+  2026-08-05  1
+  2026-09-10  8
+
+4) Day-over-day check: metastore on 10/25 vs 10/26
+
+Same 75 datasets both days, no 'modified' dates or download links changed.
+So the 10/26 run after a 10/25 run downloads nothing and logs all 75 as
+unchanged. A file only gets pulled again once CMS bumps its 'modified' date.
+
+5) Real file processed: Hospital General Information (xubh-q36u)
+
+Source file is the CSV from this dataset's downloadURL (modified 2026-07-22),
+fed to the job from a local copy.
+Result: 5419 rows, 38 columns -> hospital_general_information__xubh-q36u.csv
+
+Two runs back to back. The second one skips the file because nothing changed:
+
+  14:50:13  Previous successful run: none (first run)
+  14:50:13  Starting run #1
+  14:50:13    queue  xubh-q36u  Hospital General Information  (new dataset)
+  14:50:13  1 to download, 0 unchanged
+  14:50:13    done   xubh-q36u    5419 rows  38 cols    0.1s  hospital_general_information__xubh-q36u.csv
+  14:50:13  Run #1 SUCCESS: 1 downloaded, 0 unchanged, 0 failed. Manifest: state/manifests/run_00001.json
+  14:50:13  Previous successful run: #1 finished 2026-10-26T19:50:13+00:00
+  14:50:13  Starting run #2
+  14:50:13  0 to download, 1 unchanged
+  14:50:13  Run #2 SUCCESS: 0 downloaded, 1 unchanged, 0 failed. Manifest: state/manifests/run_00002.json
+
+Header mapping (also saved in state/manifests/run_00001.json):
+
+  Facility ID                                       ->  facility_id
+  Facility Name                                     ->  facility_name
+  Address                                           ->  address
+  City/Town                                         ->  city_town
+  State                                             ->  state
+  ZIP Code                                          ->  zip_code
+  County/Parish                                     ->  county_parish
+  Telephone Number                                  ->  telephone_number
+  Hospital Type                                     ->  hospital_type
+  Hospital Ownership                                ->  hospital_ownership
+  Emergency Services                                ->  emergency_services
+  Meets criteria for birthing friendly designation  ->  meets_criteria_for_birthing_friendly_designation
+  Hospital overall rating                           ->  hospital_overall_rating
+  Hospital overall rating footnote                  ->  hospital_overall_rating_footnote
+  MORT Group Measure Count                          ->  mort_group_measure_count
+  Count of Facility MORT Measures                   ->  count_of_facility_mort_measures
+  Count of MORT Measures Better                     ->  count_of_mort_measures_better
+  Count of MORT Measures No Different               ->  count_of_mort_measures_no_different
+  Count of MORT Measures Worse                      ->  count_of_mort_measures_worse
+  MORT Group Footnote                               ->  mort_group_footnote
+  Safety Group Measure Count                        ->  safety_group_measure_count
+  Count of Facility Safety Measures                 ->  count_of_facility_safety_measures
+  Count of Safety Measures Better                   ->  count_of_safety_measures_better
+  Count of Safety Measures No Different             ->  count_of_safety_measures_no_different
+  Count of Safety Measures Worse                    ->  count_of_safety_measures_worse
+  Safety Group Footnote                             ->  safety_group_footnote
+  READM Group Measure Count                         ->  readm_group_measure_count
+  Count of Facility READM Measures                  ->  count_of_facility_readm_measures
+  Count of READM Measures Better                    ->  count_of_readm_measures_better
+  Count of READM Measures No Different              ->  count_of_readm_measures_no_different
+  Count of READM Measures Worse                     ->  count_of_readm_measures_worse
+  READM Group Footnote                              ->  readm_group_footnote
+  Pt Exp Group Measure Count                        ->  pt_exp_group_measure_count
+  Count of Facility Pt Exp Measures                 ->  count_of_facility_pt_exp_measures
+  Pt Exp Group Footnote                             ->  pt_exp_group_footnote
+  TE Group Measure Count                            ->  te_group_measure_count
+  Count of Facility TE Measures                     ->  count_of_facility_te_measures
+  TE Group Footnote                                 ->  te_group_footnote
+
+First 10 rows of the output (only the header changes, data is untouched):
+
+facility_id,facility_name,address,city_town,state,zip_code,county_parish,telephone_number,hospital_type,hospital_ownership,emergency_services,meets_criteria_for_birthing_friendly_designation,hospital_overall_rating,hospital_overall_rating_footnote,mort_group_measure_count,count_of_facility_mort_measures,count_of_mort_measures_better,count_of_mort_measures_no_different,count_of_mort_measures_worse,mort_group_footnote,safety_group_measure_count,count_of_facility_safety_measures,count_of_safety_measures_better,count_of_safety_measures_no_different,count_of_safety_measures_worse,safety_group_footnote,readm_group_measure_count,count_of_facility_readm_measures,count_of_readm_measures_better,count_of_readm_measures_no_different,count_of_readm_measures_worse,readm_group_footnote,pt_exp_group_measure_count,count_of_facility_pt_exp_measures,pt_exp_group_footnote,te_group_measure_count,count_of_facility_te_measures,te_group_footnote
+010001,SOUTHEAST HEALTH MEDICAL CENTER,1108 ROSS CLARK CIRCLE,DOTHAN,AL,36301,HOUSTON,(334) 793-8701,Acute Care Hospitals,Government - Hospital District or Authority,Yes,Y,4,,8,8,0,8,0,,8,7,3,4,0,,11,11,1,9,1,,15,15,,10,10,
+010005,MARSHALL MEDICAL CENTERS,2505 U S HIGHWAY 431 NORTH,BOAZ,AL,35957,MARSHALL,(256) 593-8310,Acute Care Hospitals,Government - Hospital District or Authority,Yes,Y,3,,8,6,0,5,1,,8,7,0,7,0,,11,9,1,8,0,,15,15,,10,10,
+010006,NORTH ALABAMA MEDICAL CENTER,1701 VETERANS DRIVE,FLORENCE,AL,35630,LAUDERDALE,(256) 768-8400,Acute Care Hospitals,Proprietary,Yes,Y,2,,8,8,0,5,3,,8,8,4,4,0,,11,9,1,8,0,,15,15,,10,9,
+010007,MIZELL MEMORIAL HOSPITAL,702 N MAIN ST,OPP,AL,36467,COVINGTON,(334) 493-3541,Acute Care Hospitals,Voluntary non-profit - Private,Yes,,1,,8,4,0,3,1,,8,2,0,2,0,,11,5,0,3,2,,15,5,,10,7,
+010011,ST. VINCENT'S EAST,50 MEDICAL PARK EAST DRIVE,BIRMINGHAM,AL,35235,JEFFERSON,(205) 838-3122,Acute Care Hospitals,Voluntary non-profit - Private,Yes,,3,29,8,8,0,8,0,29,8,7,1,6,0,29,11,8,1,5,2,29,15,10,29,10,7,29
+010012,DEKALB REGIONAL MEDICAL CENTER,200 MED CENTER DRIVE,FORT PAYNE,AL,35968,DE KALB,(256) 845-3150,Acute Care Hospitals,Proprietary,Yes,Y,2,,8,5,0,5,0,,8,4,0,4,0,,11,8,0,6,2,,15,15,,10,9,
+010016,SHELBY BAPTIST MEDICAL CENTER,1000 FIRST STREET NORTH,ALABASTER,AL,35007,SHELBY,(205) 620-8100,Acute Care Hospitals,Voluntary non-profit - Private,Yes,,2,,8,8,0,8,0,,8,7,1,5,1,,11,9,0,8,1,,15,15,,10,6,
+010019,HELEN KELLER HOSPITAL,1300 SOUTH MONTGOMERY AVENUE,SHEFFIELD,AL,35660,COLBERT,(256) 386-4556,Acute Care Hospitals,Government - Hospital District or Authority,Yes,Y,2,,8,5,0,4,1,,8,7,1,6,0,,11,7,1,5,1,,15,15,,10,9,
+010021,DALE MEDICAL CENTER,126 HOSPITAL AVE,OZARK,AL,36360,DALE,(334) 774-2601,Acute Care Hospitals,Government - Hospital District or Authority,Yes,,Not Available,16,8,2,0,2,0,,8,2,0,2,0,,11,3,0,2,1,,15,5,,10,8,
+010022,FLOYD CHEROKEE MEDICAL CENTER,400 NORTHWOOD DR,CENTRE,AL,35960,CHEROKEE,(256) 927-5531,Acute Care Hospitals,Proprietary,Yes,,Not Available,16,8,1,0,1,0,,8,1,0,1,0,,11,2,0,2,0,,15,Not Available,5,10,5,
